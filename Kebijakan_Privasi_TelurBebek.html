@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kebijakan Privasi TelurBebek</title>
+    <meta name="description" content="Kebijakan Privasi aplikasi TelurBebek: data apa yang diproses, untuk apa, dan hak Anda." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+    <style>
+      :root {
+        --bg: #fffbf7;
+        --card: #ffffff;
+        --ink: #1f1a17;
+        --muted: #6b5e55;
+        --line: #f1dfd0;
+        --orange: #e8590c;
+        --peach: #ffe3d0;
+        --cream: #fff5ec;
+        --fill: #fff1b8;
+        --green: #0b6b45;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme='light']) {
+          --bg: #17130f;
+          --card: #211b16;
+          --ink: #f6ede4;
+          --muted: #b9a99c;
+          --line: #3a2f27;
+          --orange: #ff8a4c;
+          --peach: #3a2416;
+          --cream: #2a2019;
+          --fill: #4a3d0f;
+          --green: #5bd6a0;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family:
+          'Poppins',
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        line-height: 1.7;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 20px 80px;
+      }
+      header.hero {
+        background: var(--orange);
+        color: #fff;
+        padding: 52px 0 44px;
+        margin-bottom: 36px;
+      }
+      header.hero .wrap {
+        padding-bottom: 0;
+      }
+      .eyebrow {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        opacity: 0.9;
+      }
+      h1 {
+        font-size: clamp(30px, 6vw, 44px);
+        line-height: 1.15;
+        margin: 8px 0 12px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+      }
+      .meta {
+        font-size: 14px;
+        opacity: 0.92;
+      }
+      h2 {
+        font-size: 22px;
+        line-height: 1.3;
+        margin: 48px 0 12px;
+        font-weight: 700;
+        display: flex;
+        gap: 12px;
+        align-items: baseline;
+      }
+      h2 .n {
+        flex: none;
+        color: var(--orange);
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 17px;
+        margin: 26px 0 6px;
+        font-weight: 600;
+      }
+      p {
+        margin: 0 0 14px;
+      }
+      ul {
+        margin: 0 0 16px;
+        padding-left: 22px;
+      }
+      li {
+        margin: 6px 0;
+      }
+      a {
+        color: var(--orange);
+      }
+      .summary {
+        background: var(--peach);
+        border-radius: 20px;
+        padding: 24px 26px;
+        margin: 0 0 8px;
+      }
+      .summary h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+      .summary ul {
+        margin: 0;
+      }
+      .tablewrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--card);
+        margin: 14px 0 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 560px;
+        font-size: 14.5px;
+      }
+      th {
+        background: var(--orange);
+        color: #fff;
+        text-align: left;
+        font-weight: 600;
+        padding: 11px 14px;
+      }
+      td {
+        padding: 12px 14px;
+        vertical-align: top;
+        border-top: 1px solid var(--line);
+      }
+      tr:nth-child(even) td {
+        background: var(--cream);
+      }
+      td:first-child {
+        font-weight: 600;
+        width: 26%;
+      }
+      .note {
+        background: var(--cream);
+        border-left: 4px solid var(--orange);
+        padding: 14px 18px;
+        border-radius: 0 12px 12px 0;
+        margin: 16px 0;
+        font-size: 15px;
+      }
+      .fill {
+        background: var(--fill);
+        padding: 1px 6px;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      .toc {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 24px;
+        margin: 28px 0 0;
+      }
+      .toc ol {
+        margin: 6px 0 0;
+        padding-left: 22px;
+        columns: 2;
+        column-gap: 32px;
+      }
+      .toc li {
+        margin: 3px 0;
+        font-size: 14.5px;
+        break-inside: avoid;
+      }
+      .toc a {
+        text-decoration: none;
+      }
+      .toc a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 640px) {
+        .toc ol {
+          columns: 1;
+        }
+      }
+      footer {
+        margin-top: 56px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+      @media print {
+        header.hero {
+          background: #fff;
+          color: #000;
+          padding: 0;
+        }
+        .toc {
+          display: none;
+        }
+        body {
+          background: #fff;
+          color: #000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="eyebrow">TelurBebek</div>
+        <h1>Kebijakan Privasi</h1>
+        <div class="meta">Berlaku sejak 24 September 2026 &nbsp;|&nbsp; Aplikasi Android <b>TelurBebek</b></div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="summary">
+        <h2>Ringkasan singkat</h2>
+        <ul>
+          <li><b>Catatan usaha Anda tinggal di HP Anda.</b> Data kandang, pakan, telur, biaya, formula, dan stok tidak dikirim ke server kami.</li>
+          <li><b>Tanpa iklan, tanpa pelacak.</b> Kami tidak memasang SDK iklan, analitik, atau pelaporan crash pihak ketiga.</li>
+          <li>Data keluar dari HP hanya pada tiga keadaan: <b>aktivasi lisensi</b>, fitur <b>Tanya AI</b>, dan <b>cadangan</b> yang Anda buat sendiri.</li>
+          <li><b>Kamera</b> hanya dipakai untuk mengukur telur. Gambar diproses di HP, tidak disimpan, dan tidak dikirim.</li>
+          <li>Kami <b>tidak menjual</b> data Anda.</li>
+        </ul>
+      </div>
+
+      <nav class="toc" aria-label="Daftar isi">
+        <b>Daftar isi</b>
+        <ol>
+          <li><a href="#pengembang">Siapa kami</a></li>
+          <li><a href="#data">Data yang diproses</a></li>
+          <li><a href="#tidak">Yang tidak kami lakukan</a></li>
+          <li><a href="#izin">Izin aplikasi</a></li>
+          <li><a href="#pihak-ketiga">Pihak ketiga</a></li>
+          <li><a href="#simpan">Penyimpanan, keamanan, dan retensi</a></li>
+          <li><a href="#hak">Hak dan pilihan Anda</a></li>
+          <li><a href="#anak">Anak-anak</a></li>
+          <li><a href="#lintas">Transfer data lintas negara</a></li>
+          <li><a href="#perubahan">Perubahan kebijakan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="pengembang"><span class="n">1.</span> Siapa kami</h2>
+      <p>
+        TelurBebek adalah aplikasi Android untuk peternak bebek petelur: mencatat pakan dan telur, menghitung HPP dan margin, meracik formula pakan, mengelola stok bahan, mengatur alarm jadwal pakan, dan bertanya kepada asisten AI. Aplikasi
+        ini dikelola oleh pengembangnya ("kami"). Kebijakan ini menjelaskan data apa yang diproses aplikasi, untuk apa, dan pilihan Anda, sesuai prinsip pelindungan data pribadi yang berlaku di Indonesia (UU No. 27 Tahun 2022 tentang
+        Pelindungan Data Pribadi).
+      </p>
+
+      <h2 id="data"><span class="n">2.</span> Data yang diproses</h2>
+
+      <h3>2.1 Catatan usaha Anda (hanya di HP)</h3>
+      <p>Semua yang Anda masukkan untuk menjalankan fitur inti disimpan di database lokal pada HP Anda dan <b>tidak kami terima</b>:</p>
+      <ul>
+        <li>Kandang dan jumlah bebek (produktif, tidak produktif, mati);</li>
+        <li>Pakan harian, produksi telur (bagus, retak, rusak), biaya produksi, dan harga jual telur;</li>
+        <li>Bahan pakan beserta harga dan nilai nutrisinya, formula pakan, Standar Nutrisi, dan hasil hitung HPP;</li>
+        <li>Stok bahan pakan, stok minimum, dan riwayat pergerakan stok;</li>
+        <li>Jadwal pakan dan pengaturan alarm;</li>
+        <li>Pengaturan aplikasi, termasuk alamat email cadangan dan kunci AI pribadi bila Anda mengisinya.</li>
+      </ul>
+
+      <h3>2.2 Ringkasan data yang dapat keluar dari HP</h3>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Fitur</th>
+              <th>Data yang dikirim</th>
+              <th>Dikirim ke</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aktivasi dan verifikasi lisensi</td>
+              <td>
+                Kunci lisensi; <b>kode perangkat</b> berupa hasil hash SHA-256 dari ANDROID_ID dan nama paket (nilai ANDROID_ID asli tidak dikirim); nama produsen dan model HP (mis. "samsung SM-A125F"), yang dipakai sebagai catatan admin.
+                Alamat IP terlihat oleh server sebagaimana lazim pada koneksi internet.
+              </td>
+              <td>Server lisensi kami, berupa Google Apps Script dan Google Sheets</td>
+            </tr>
+            <tr>
+              <td>Tanya AI, "Info hari ini", dan pencarian nilai gizi bahan</td>
+              <td>
+                Teks pertanyaan Anda; Standar Nutrisi; nama formula beserta hasil hitungnya (harga per kg, nutrisi); daftar bahan aktif (nama, harga, nutrisi); data acuan bahan; tanggal hari ini; nama bahan yang Anda minta dicarikan nilai
+                gizinya. Permintaan juga memuat identitas aplikasi (nama paket dan sidik tanda tangan aplikasi) untuk pembatasan kunci API. <b>Tidak disertakan:</b> nama kandang, jumlah bebek, data produksi telur, biaya, penjualan, dan
+                stok.
+              </td>
+              <td>Google (Gemini API)</td>
+            </tr>
+            <tr>
+              <td>Data acuan bahan pakan</td>
+              <td>Aplikasi hanya <b>mengunduh</b> daftar acuan terbaru. Tidak ada data usaha Anda yang dikirim.</td>
+              <td>Google Sheets milik kami (via Apps Script)</td>
+            </tr>
+            <tr>
+              <td>Cadangan dan pemulihan</td>
+              <td>Berkas cadangan berisi seluruh data usaha Anda. Berkas dibuat atas permintaan Anda dan Anda sendiri yang memilih tujuannya (Google Drive, Gmail, atau aplikasi lain). Kami tidak menerima berkas ini.</td>
+              <td>Akun dan aplikasi pilihan Anda</td>
+            </tr>
+            <tr>
+              <td>Bantuan atau pembelian lisensi lewat WhatsApp</td>
+              <td>Tombol WhatsApp membuka pesan siap kirim. Bila Anda mengirimnya, kami menerima nomor WhatsApp, nama profil, dan isi pesan Anda. Pesan bantuan lisensi hanya memuat kunci lisensi dalam bentuk tersamarkan.</td>
+              <td>WhatsApp (Meta) dan kami</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>2.3 Kamera (Ukur Telur Live)</h3>
+      <p>
+        Kamera hanya aktif di layar <b>Ukur Telur Live</b>. Gambar dari kamera dianalisis langsung di HP oleh model deteksi objek ML Kit yang sudah ikut di dalam aplikasi, untuk menemukan koin pembanding dan telur. Gambar
+        <b>tidak disimpan dan tidak dikirim</b> ke mana pun. Yang tersimpan hanya hasil kalibrasi (angka skala) agar Anda tidak perlu mengulanginya.
+      </p>
+
+      <h3>2.4 Data yang kami simpan di server lisensi</h3>
+      <p>
+        Untuk membatasi satu lisensi pada satu HP, server lisensi kami mencatat: kunci lisensi, status (belum aktif, aktif, diblokir), kode perangkat (hash), nama model HP, waktu aktivasi, waktu verifikasi terakhir, dan catatan penjual
+        (mis. nama atau nomor WhatsApp pembeli yang kami isi sendiri saat penjualan). Aplikasi memverifikasi ulang lisensi secara berkala selama aplikasi dibuka dan HP terhubung internet. Bila tidak ada koneksi, aplikasi tetap dapat
+        dipakai.
+      </p>
+
+      <h2 id="tidak"><span class="n">3.</span> Yang tidak kami lakukan</h2>
+      <ul>
+        <li>Tidak menampilkan iklan dan tidak memasang SDK iklan, analitik perilaku, atau pelaporan crash pihak ketiga.</li>
+        <li>Tidak mengakses lokasi, kontak, SMS, riwayat panggilan, mikrofon, atau galeri foto Anda.</li>
+        <li>Tidak menjual, menyewakan, atau menukar data Anda dengan pihak lain untuk tujuan pemasaran.</li>
+        <li>Tidak membuat profil atau melacak Anda antar aplikasi.</li>
+      </ul>
+
+      <h2 id="izin"><span class="n">4.</span> Izin aplikasi</h2>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Izin</th>
+              <th>Untuk apa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Internet</td>
+              <td>Aktivasi dan verifikasi lisensi, Tanya AI, dan mengunduh data acuan bahan.</td>
+            </tr>
+            <tr>
+              <td>Kamera</td>
+              <td>Fitur Ukur Telur Live. Bersifat opsional: bila ditolak, fitur lain tetap berjalan.</td>
+            </tr>
+            <tr>
+              <td>Notifikasi</td>
+              <td>Alarm jadwal pakan dan pengingat stok bahan menipis.</td>
+            </tr>
+            <tr>
+              <td>Alarm tepat waktu</td>
+              <td>Membunyikan alarm pakan pada jam yang Anda atur.</td>
+            </tr>
+            <tr>
+              <td>Menerima "boot selesai"</td>
+              <td>Memasang ulang alarm jadwal setelah HP dinyalakan ulang.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="pihak-ketiga"><span class="n">5.</span> Pihak ketiga</h2>
+      <p>Kami memakai layanan berikut. Masing-masing memiliki kebijakan privasinya sendiri:</p>
+      <ul>
+        <li>
+          <b>Google</b>: Gemini API (fitur Tanya AI), Google Apps Script dan Google Sheets (lisensi dan data acuan), serta Google Drive atau Gmail bila Anda memilihnya untuk cadangan.
+          <a href="https://policies.google.com/privacy" rel="noopener">Kebijakan Privasi Google</a>.
+        </li>
+        <li><b>WhatsApp (Meta)</b>: bila Anda menghubungi kami melalui WhatsApp. <a href="https://www.whatsapp.com/legal/privacy-policy" rel="noopener">Kebijakan Privasi WhatsApp</a>.</li>
+      </ul>
+      <div class="note">
+        <b>Tentang Tanya AI.</b> Pertanyaan Anda diproses oleh Google. Pada layanan gratis, ketentuan Google dapat mengizinkan konten yang dikirim dipakai untuk meningkatkan layanan mereka. Karena itu
+        <b>jangan mengetik data pribadi atau rahasia</b> (mis. nomor identitas, rekening, atau kata sandi) di kolom pertanyaan. Jawaban AI adalah acuan, bukan pengganti dokter hewan atau ahli nutrisi ternak.
+      </div>
+      <p>Bila Anda mengisi kunci API Gemini milik sendiri di pengaturan AI, permintaan dikirim memakai kunci tersebut dan tunduk pada ketentuan akun Google Anda.</p>
+
+      <h2 id="simpan"><span class="n">6.</span> Penyimpanan, keamanan, dan retensi</h2>
+      <ul>
+        <li><b>Di HP:</b> data usaha disimpan di database lokal dan bertahan sampai Anda menghapusnya (menu <i>Kosongkan data</i>, <i>Hapus data aplikasi</i>, atau mencopot aplikasi). Status aktivasi lisensi disimpan terenkripsi.</li>
+        <li><b>Saat dikirim:</b> komunikasi ke server lisensi, data acuan, dan Gemini API memakai koneksi HTTPS.</li>
+        <li>
+          <b>Cadangan otomatis Android:</b> bila "Cadangan Google" aktif di HP Anda, sistem Android dapat mencadangkan data aplikasi (database, jadwal alarm, dan pengaturan cadangan) ke akun Google Anda. Pada Android 12 ke atas, kunci AI
+          pribadi dikecualikan dari pencadangan ini.
+        </li>
+        <li><b>Berkas cadangan buatan Anda tidak dienkripsi.</b> Simpan hanya di akun atau tempat yang Anda percayai.</li>
+        <li><b>Server lisensi:</b> catatan lisensi disimpan selama lisensi berlaku dan seperlunya untuk bantuan serta bukti pembelian. Anda dapat meminta penghapusannya (lihat bagian 7).</li>
+        <li>Tidak ada sistem yang aman sepenuhnya. Kami berupaya wajar melindungi data, namun tidak dapat menjamin keamanan mutlak.</li>
+      </ul>
+
+      <h2 id="hak"><span class="n">7.</span> Hak dan pilihan Anda</h2>
+      <ul>
+        <li><b>Melihat dan mengubah data:</b> semua catatan usaha dapat dilihat dan diubah langsung di aplikasi.</li>
+        <li><b>Menghapus data di HP:</b> gunakan <i>Kosongkan data</i> di aplikasi, atau hapus data/copot aplikasi. Buat cadangan lebih dulu bila masih diperlukan.</li>
+        <li><b>Mencabut izin:</b> kamera, notifikasi, dan alarm dapat dimatikan kapan saja di Pengaturan HP.</li>
+        <li><b>Kunci AI pribadi:</b> dapat dihapus lewat ikon pengaturan di layar Tanya AI. Anda juga bisa tidak memakai fitur AI sama sekali.</li>
+        <li>
+          <b>Data lisensi di server kami:</b> Anda dapat meminta akses, koreksi, atau penghapusan lewat kontak di bawah. Kami menanggapi secepatnya dan paling lambat 30 hari. Setelah data lisensi dihapus, lisensi tidak dapat diverifikasi
+          lagi.
+        </li>
+        <li><b>Data yang sudah ada di Google atau WhatsApp:</b> kelola langsung di akun Anda atau lewat pengaturan layanan tersebut.</li>
+      </ul>
+
+      <h2 id="anak"><span class="n">8.</span> Anak-anak</h2>
+      <p>
+        TelurBebek ditujukan bagi peternak dewasa dan tidak dirancang untuk anak di bawah 13 tahun. Kami tidak dengan sengaja mengumpulkan data pribadi anak. Bila Anda mengira ada data anak yang sampai kepada kami, hubungi kami agar dapat
+        dihapus.
+      </p>
+
+      <h2 id="lintas"><span class="n">9.</span> Transfer data lintas negara</h2>
+      <p>
+        Server Google dan WhatsApp dapat berada di luar Indonesia. Dengan memakai fitur yang terhubung ke layanan tersebut (lisensi, Tanya AI, cadangan ke Google), data yang relevan dapat diproses di luar Indonesia sesuai kebijakan
+        masing-masing penyedia.
+      </p>
+
+      <h2 id="perubahan"><span class="n">10.</span> Perubahan kebijakan</h2>
+      <p>
+        Kebijakan ini dapat diperbarui, misalnya saat kami menambah fitur baru. Versi terbaru selalu dimuat di halaman ini dengan tanggal berlaku di bagian atas. Untuk perubahan yang berarti, kami akan memberi tahu lewat pembaruan aplikasi
+        atau deskripsi aplikasi.
+      </p>
+
+      <h2 id="kontak"><span class="n">11.</span> Kontak</h2>
+      <p>Pertanyaan, permintaan akses, atau penghapusan data:</p>
+      <ul>
+        <li>Email: <a href="mailto:nadi.selamet@gmail.com">nadi.selamet@gmail.com</a></li>
+        <li>Telepon / WhatsApp: <a href="https://wa.me/6281294388977">081294388977</a></li>
+      </ul>
+
+      <footer>Kebijakan Privasi TelurBebek &middot; berlaku sejak 24 September 2026.</footer>
+    </main>
+  </body>
+</html>
